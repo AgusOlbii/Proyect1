@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="shortcut icon" href="./assets/images/pokemon_icon.png" type="image/x-icon">
+    <title>Pokemon Cards</title>
+</head>
+<body>
+    <header><h1>Pokemon Card</h1></header>
+    <main>
+        <section>
+            <h2>Search for your favorite Pokemon</h2>
+            <div>
+                <input type="text" id="pokemon_input" placeholder="Enter Pokemon Name or ID" /> <!-- Input para buscar el pokemon -->
+                <button onclick="searchPokemon()">Search</button> <!-- Boton para buscar el pokemon --> 
+            </div>
+        </section>
+        
+        <div id="card" class="card">
+            <img id="pokemon_image" src="" alt="Pokemon Image"> <!-- Aqui va la imagen del pokemon -->
+            <h2 id="pokemon_name"></h2> <!-- Aqui va el nombre del pokemon -->
+            <p>Tipo: <span id="pokemon_type"></span></p> <!-- Aqui va el tipo del pokemon -->
+            <p>Habilidad: <span id="pokemon_ability"></span></p> <!-- Aqui va la habilidad del pokemon -->
+            <p>Poder: <span id="pokemon_power"></span></p>
+        </div>
+    </main>
+</body>
+<script src="../004/js/main.js"></script>
+</html>
